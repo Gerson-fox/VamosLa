@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Calculadora</title>
+    <link rel="stylesheet" href="App.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Meta Calculadora</h1>
+        <form id="goalForm">
+            <div>
+                <label>Meta de Volume do Mês:</label>
+                <input type="number" id="metaMesVol" required />
+            </div>
+            <div>
+                <label>Meta de Operação do Mês:</label>
+                <input type="number" id="metaMesOp" required />
+            </div>
+            <div>
+                <label>Porcentagem de Volume da Manhã:</label>
+                <input type="number" id="porcentagemManhaVol" required />
+            </div>
+            <div>
+                <label>Porcentagem de Volume da Tarde:</label>
+                <input type="number" id="porcentagemTardeVol" required />
+            </div>
+            <div>
+                <label>Porcentagem de Volume da Noite:</label>
+                <input type="number" id="porcentagemNoiteVol" required />
+            </div>
+            <div>
+                <label>Porcentagem de Operação da Manhã:</label>
+                <input type="number" id="porcentagemManhaOp" required />
+            </div>
+            <div>
+                <label>Porcentagem de Operação da Tarde:</label>
+                <input type="number" id="porcentagemTardeOp" required />
+            </div>
+            <div>
+                <label>Porcentagem de Operação da Noite:</label>
+                <input type="number" id="porcentagemNoiteOp" required />
+            </div>
+            <div>
+                <label>Quantos dias no mês?</label>
+                <input type="number" id="diasMes" min="28" max="31" required />
+            </div>
+            <div>
+                <label>Quantos dias o operador irá trabalhar pela manhã?</label>
+                <input type="number" id="diasTrabalhadosManha" required />
+            </div>
+            <div>
+                <label>Quantos dias o operador irá trabalhar pela tarde?</label>
+                <input type="number" id="diasTrabalhadosTarde" required />
+            </div>
+            <div>
+                <label>Quantos dias o operador irá trabalhar pela noite?</label>
+                <input type="number" id="diasTrabalhadosNoite" required />
+            </div>
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="resultados"></div>
+    </div>
+
+    <script src="App.js"></script>
+</body>
+</html>
